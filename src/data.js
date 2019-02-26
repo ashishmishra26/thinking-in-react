@@ -23,6 +23,12 @@ var data = [{
         name: "iPod Touch"
     },
     {
+        category: "Sporting Goods",
+        price: "$49.99",
+        stocked: true,
+        name: "Football2"
+    },
+    {
         category: "Electronics",
         price: "$399.99",
         stocked: false,

@@ -9,7 +9,15 @@ class App extends Component {
   constructor (props) {
     super(props);
     this.state = {
-      data: data,
+      data: data.sort((a, b) => {
+        if (a.category.toLowerCase() < b.category.toLowerCase()) {
+          return -1;
+        }
+        if (a.category.toLowerCase() > b.category.toLowerCase()) {
+          return 1;
+        }
+        return 0;
+      }),
       isStocks: false,
       searchText: ''
     }
